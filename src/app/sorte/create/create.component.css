@@ -1,0 +1,42 @@
+div#sorte{
+  margin-top: 100px;
+  margin-left: 700px;
+}
+
+div#resultado{
+  margin-top: 50px;
+  margin-left: 700px;
+}
+
+button#botao{
+  margin-left: 200px;
+  margin-right: 500px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+button#boton{
+  margin-left: 50px;
+  margin-right: 500px;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+input#chute{
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 15px 32px;
+}
