@@ -22,7 +22,7 @@ export class CreateComponent implements OnInit {
   }
 
   getRandomInt(): number {
-    return this.random = (Math.floor(Math.random() * 2 + 1));
+    return this.random = (Math.floor(Math.random() * 100 + 1));
   }
 
   inputValidar(): string{
