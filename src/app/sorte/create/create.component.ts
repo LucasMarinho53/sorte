@@ -11,28 +11,30 @@ export class CreateComponent implements OnInit {
 
   random: number | undefined;
   SorteForm!: FormGroup;
-  Sorte: SorteModel | undefined;
+  Sorte!: SorteModel | undefined;
   Resultado: string | undefined
 
   constructor(private formBuilder: FormBuilder) { }
 
 
-  ngOnInit(): void {
-    chute: [Validators.required, Validators.pattern(/^[1-9][0-9]?$|^100$/)]
+  ngOnInit() {
+    this.SorteForm = this.formBuilder.group({chute: ['', Validators.required, Validators.pattern(/^[1-9][0-9]?$|^100$/)],});
   }
 
   getRandomInt(): number {
-    return this.random = (Math.floor(Math.random() * 100 + 1));
+    return this.random = (Math.floor(Math.random() * 2 + 1));
   }
 
   inputValidar(): string{
+    const sort = this.SorteForm.getRawValue() as SorteModel;
 
-
-    if(this.Sorte == this.random){
+    if(sort.chute == this.random){
       return this.Resultado = "Acertou";
     } else{
       return this.Resultado = "Errou";
     }
   }
+
+  get chute() { return this.SorteForm.get('chute')!; }
 
 }

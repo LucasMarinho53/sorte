@@ -8,15 +8,20 @@
 
 <br>
 
+<form [formGroup]="SorteForm" (submit)="inputValidar()">
 <div id="resultado">
-<h2>Digite um numero entre 1 a 100</h2>
+  <h2>Digite um numero entre 1 a 100</h2>
 <br>
-<input id="chute" formControlName="chute">
-<button id="boton" (click)="inputValidar()">Resultado</button>
+<input type="number" id="chute" formControlName="chute" placeholder="Digite seu número" required>
+  <div *ngIf="chute.errors?.['required']">
+    <i>Numero é requerido</i>
+  </div>
+<button type="submit" id="boton" (click)="inputValidar()">Resultado</button>
 <br>
 Resultado = {{Resultado}}
 <br>
 </div>
+</form>
 
 
 

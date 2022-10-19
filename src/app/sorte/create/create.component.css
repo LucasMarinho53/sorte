@@ -9,7 +9,7 @@ div#resultado{
 }
 
 button#botao{
-  margin-left: 200px;
+  margin-left: 180px;
   margin-right: 500px;
   background-color: #4CAF50; /* Green */
   border: none;
@@ -39,4 +39,8 @@ input#chute{
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 15px 32px;
+}
+
+i{
+  color: red;
 }
