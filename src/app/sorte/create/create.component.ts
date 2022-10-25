@@ -29,9 +29,9 @@ export class CreateComponent implements OnInit {
     const sort = this.SorteForm.getRawValue() as SorteModel;
 
     if(sort.chute == this.random){
-      return this.Resultado = "Acertou";
+      return this.Resultado = "Acertou, o número é "+this.random;
     } else{
-      return this.Resultado = "Errou";
+      return this.Resultado = "Errou, o número é "+this.random;
     }
   }
 

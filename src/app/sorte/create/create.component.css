@@ -3,14 +3,22 @@ div#sorte{
   margin-left: 700px;
 }
 
+div#espaco{
+  margin-right: 700px;
+}
+
+div#espaco1{
+  margin-top: 10px;
+  margin-left: 60px;
+}
+
 div#resultado{
   margin-top: 50px;
-  margin-left: 700px;
+  margin-left: 810px;
 }
 
 button#botao{
-  margin-left: 180px;
-  margin-right: 500px;
+
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -22,8 +30,6 @@ button#botao{
 }
 
 button#boton{
-  margin-left: 50px;
-  margin-right: 500px;
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -43,4 +49,30 @@ input#chute{
 
 i{
   color: red;
+}
+
+.interagir {
+  cursor: pointer;
+  text-align: center;
+  width: 131px;
+  height: 90px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dado {
+  cursor: pointer;
+  text-align: center;
+  width: 117px;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;
 }

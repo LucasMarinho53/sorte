@@ -2,25 +2,33 @@
 <div id="sorte">
 <h2>Clique em "Sortear" para sortear um numero aleatorio</h2>
 <br>
-<button id="botao" (click)="getRandomInt()">Sortear</button>
+  <div id="espaco">
+    <div matRipple class="dado mat-elevation-z4">
+    <button id="botao" (click)="getRandomInt()">Sortear</button>
+    </div>
+  </div>
 <br>
 </div>
 
 <br>
 
 <form [formGroup]="SorteForm" (submit)="inputValidar()">
-<div id="resultado">
-  <h2>Digite um numero entre 1 a 100</h2>
-<br>
-<input type="number" id="chute" formControlName="chute" placeholder="Digite seu número" required>
-  <div *ngIf="chute.errors?.['required']">
-    <i>Numero é requerido</i>
+  <div id="resultado">
+    <h2>Digite um numero entre 1 a 100</h2>
+  <br>
+  <input type="number" id="chute" formControlName="chute" placeholder="Digite seu número" required>
+      <div *ngIf="chute.errors?.['required']">
+        <i>Numero é requerido</i>
+      </div>
+        <div id="espaco1">
+          <div matRipple class="interagir mat-elevation-z4">
+            <button type="submit" id="boton" (click)="inputValidar()"><h4>Resultado</h4> <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="reply_all"></mat-icon></button>
+          </div>
+        </div>
+  <br>
+  Resultado = {{Resultado}}
+  <br>
   </div>
-<button type="submit" id="boton" (click)="inputValidar()">Resultado</button>
-<br>
-Resultado = {{Resultado}}
-<br>
-</div>
 </form>
 
 
